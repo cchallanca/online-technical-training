@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="academy.libro" id="lb_001">
+            <field name="name">Libro uno</field>
+            <field name="abstract">Resumen de este libro 1</field>
+            <field name="date_publish">2001-07-28</field>
+            <field name="author_ids" eval="[(6, 0, [ ref('ath_001'), ref('ath_002')])]"/>
+        </record>
+         <record model="academy.libro" id="lb_002">
+            <field name="name">Libro dos</field>
+            <field name="abstract">Resumen de este libro 2</field>
+            <field name="date_publish">2000-08-28</field>
+            <field name="author_ids" eval="[(6, 0, [ ref('ath_001')])]"/>
+        </record>
+         <record model="academy.libro" id="lb_003">
+            <field name="name">Libro tres</field>
+            <field name="abstract">Resumen de este libro 3</field>
+            <field name="date_publish">2000-08-28</field>
+            <field name="author_ids" eval="[(6, 0, [ ref('ath_003'), ref('ath_004')])]"/>
+        </record>
+         <record model="academy.libro" id="lb_004">
+            <field name="name">Libro cuatro</field>
+            <field name="abstract">Resumen de este libro 4</field>
+            <field name="date_publish">2005-07-10</field>
+            <field name="author_ids" eval="[(6, 0, [ ref('ath_002'), ref('ath_004')])]"/>
+        </record>
+    </data>
+</odoo>

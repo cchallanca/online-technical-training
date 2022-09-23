@@ -23,13 +23,16 @@
     'depends': ['base'],
     
      'data': [
-         
+        'security/library_security.xml',
+         'security/ir.model.access.csv',
          
      ],
     
     'demo': [
-        
-        
+        'demo/academy_test.xml',
+        'demo/academy_test2.xml',
     ],
+    
+    'license': 'OPL-1'
     
 }

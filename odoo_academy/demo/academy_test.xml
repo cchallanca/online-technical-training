@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+        <record model="academy.author" id="ath_001">
+            <field name="name">Pepe</field>
+            <field name="last_name">Vargas</field>
+        </record>
+        <record model="academy.author" id="ath_002">
+            <field name="name">Juan</field>
+            <field name="last_name">Torres</field>
+        </record>
+        <record model="academy.author" id="ath_003">
+            <field name="name">Luis</field>
+            <field name="last_name">Ruiz</field>
+        </record>
+        <record model="academy.author" id="ath_004">
+            <field name="name">Raúl</field>
+            <field name="last_name">Velásquez</field>
+        </record>
+        
+    </data>
+</odoo>
