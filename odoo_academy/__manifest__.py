@@ -28,8 +28,7 @@
      ],
     
     'demo': [
-        'demo/academy_demo.xml',
-        
+        'demo/academy_demo.xml',  
     ],
     
     'license': 'OPL-1'
