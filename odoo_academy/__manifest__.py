@@ -24,7 +24,9 @@
     
      'data': [
         'security/library_security.xml',
-         'security/ir.model.access.csv',
+        'security/ir.model.access.csv',
+        'views/academy_menuitems.xml',
+        'views/libro_views.xml'
          
      ],
     
