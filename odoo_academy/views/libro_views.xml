@@ -12,27 +12,19 @@
                         <group>
                             <group>
                                 <field name="isbn"/>
-                            </group>
-                        </group>
-                        <group>
-                            <group>
+                                <field name="date_publish"/>
                                 <field name="active"/>
                             </group>
                             <group>
-                                <field name="date_publish"/>
-                            </group>
-                        </group>
-                        <group>
-                            <group>
                                 <field name="abstract"/>
-                            </group>
-                            <group>
-                                <field name="author_ids"/>
                             </group>
                         </group>
                         <notebook>
                             <page string="Nota">
                                 <field name="nota"/>
+                            </page>
+                            <page string="Autor">
+                                <field name="author_ids"/>
                             </page>
                         </notebook>
                     </sheet>

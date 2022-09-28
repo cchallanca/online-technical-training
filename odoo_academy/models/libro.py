@@ -1,4 +1,5 @@
 from odoo import models, fields, api
+from odoo.exceptions import UserError, ValidationError
 
 class Libro(models.Model):
     _name='academy.libro'
@@ -12,3 +13,8 @@ class Libro(models.Model):
     author_ids = fields.Many2many('academy.author', string = 'Autor')
     
     active = fields.Boolean('Active', default = True)
+    
+    @api.onchange('isbn')
+    def _onchange_isbn(self):
+        if len(self.isbn) != 13:
+            raise ValidationError('ISBN must contains 13 characters')
