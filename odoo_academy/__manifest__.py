@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'Odoo Academy',
+    'name': 'Odoo Library',
     
     'summary': """Academy app to manage Training""",
     
@@ -28,7 +28,7 @@
         'views/academy_menuitems.xml',
         'views/libro_views.xml',
         'views/autor_views.xml',
-         
+        'views/alquiler_views.xml',
      ],
     
     'demo': [

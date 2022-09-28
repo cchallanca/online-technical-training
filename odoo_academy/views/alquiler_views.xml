@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="alquiler_view_form">
+            <field name="name">academy.alquiler.form</field>
+            <field name="model">academy.alquiler</field>
+            <field name="arch" type="xml">
+                <form string="Alquiler Form">
+                    <sheet>
+                        <h1><field name="name"/></h1>
+                        <group>
+                            <field name="cliente_id"/>
+                            <field name="fecha_alquiler"/>
+                        </group>
+                        <notebook>
+                            <page string="Libros">
+                                <field name="libro_ids" widget="many2many"/>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+    </data>
+</odoo>

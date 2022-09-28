@@ -6,7 +6,5 @@
     <record id="group_library_client" model="res.groups">
         <field name="name">Library / Client</field>
     </record>
-    <record id="group_library_author" model="res.groups">
-        <field name="name">Library / Author</field>
-    </record>
+    
 </odoo>
