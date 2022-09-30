@@ -20,7 +20,7 @@
     
     'version': '0.1',
     
-    'depends': ['base'],
+    'depends': ['web_map','sale'],
     
      'data': [
         'security/library_security.xml',

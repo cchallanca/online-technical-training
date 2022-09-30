@@ -21,5 +21,15 @@
                 </form>
             </field>
         </record>
+        
+        <record model="ir.ui.view" id="alquiler_view_map">
+            <field name="name">academy.alquiler.map</field>
+            <field name="model">academy.alquiler</field>
+            <field name="arch" type="xml">
+                <map res_partner="cliente_id">
+                    <field name="cliente_id" string="Cliente"/>
+                </map>
+            </field>
+        </record>
     </data>
 </odoo>

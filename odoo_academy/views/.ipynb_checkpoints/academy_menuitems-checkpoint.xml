@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <data>
+        <record model="ir.actions.act_window" id="libro_list_action">
+            <field name="name">Libros</field>
+            <field name="res_model">academy.libro</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create the first libro
+                </p>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="autor_list_action">
+            <field name="name">Autores</field>
+            <field name="res_model">academy.author</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create the first Author
+                </p>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="alquiler_list_action">
+            <field name="name">Alquileres</field>
+            <field name="res_model">academy.alquiler</field>
+            <field name="view_mode">tree,form,map</field>
+            <field name="help" type="html">
+                <p class="o_view_nocontent_smiling_face">
+                    Create the first Alquiler
+                </p>
+            </field>
+        </record>
+        
+        <menuitem name="Odoo Library" id="menu_academy" sequence="1" />
+        
+        <menuitem id="menu_academy_sub" name="Odoo Library" parent="menu_academy" sequence="2"/>
+        
+        <menuitem id="menu_academy_courses" name="Libros" parent="menu_academy_sub" sequence="3" action="libro_list_action"/>
+        
+        <menuitem id="menu_academy_autores" name="Autores" parent="menu_academy_sub" sequence="4" action="autor_list_action"/>
+        
+        <menuitem id="menu_academy_alquileres" name="Alquileres" parent="menu_academy_sub" sequence="5" action="alquiler_list_action"/>
+    </data>
+</odoo>
